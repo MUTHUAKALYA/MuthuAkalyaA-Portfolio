@@ -66,7 +66,13 @@ body{
 .header-section-menu a:hover{
     color:white;
 }
-
+.header-section-button>.button-primary{
+    padding: 20px;
+    font-weight:700;
+}
+.header-section-button>.button-primary:hover{
+    color:white;
+}
 /* home-section appears here */
 .home-section{
     color:white;
@@ -76,6 +82,7 @@ body{
     height:300px;
 }
 img{
+
     border:3px solid var(--light-secondary-color);
     border-radius: 30px;
     margin-right: 50px;
@@ -98,6 +105,7 @@ img{
     color:white;
     cursor: pointer;
 }
+
 .button{
     margin:20px 0;
     font-weight: 500;
@@ -121,6 +129,60 @@ img{
     cursor:pointer;
     background-color: var(--light-secondary-color);
     color:var(--dark-primary-color);
+}
+/* about section appears here */
+.about-section{
+    /* display:flex;
+    justify-content: center; */
+    margin:20px 0px;
+    display: flex;
+    justify-content: center;
+
+    
+}
+.about-section-profile{
+    flex:0.3;
+}
+.about-section-text{
+    color:white;
+    padding:0px;
+    flex:0.7;
+}
+.about-section-text hr{
+    height:3px;
+    width:100px;
+    background-color: var(--light-secondary-color);
+    border:none;
+}
+.about-section-content ul li{
+    margin:10px 20px;
+    list-style: none;
+}
+
+.about-section-content span{
+    color:var(--light-secondary-color);
+    font-weight: bold;
+}
+
+/* skill section appears here */
+.skill-section {
+    text-align:center
+}
+.skill-section h1{
+    color:white;
+    font-weight:bolder;
+    margin-top:20px 0px;
+}
+.skill-section{
+    /* margin-right: 30px; */
+}
+.skill-section-images img{
+    width:150px;
+    height:150px;
+    margin: 30px 20px;
+}
+.skill-section-images img:hover{
+    cursor:pointer;
 }
 /* contact section appears here */
 
@@ -150,8 +212,19 @@ form div input,textarea{
     width:500px;
     border-radius: 15px;
     background-color: var(--light-secondary-color);
+    font-weight: bolder;
 }
+.contact-section-button{
+    text-align:center;
+    margin-top: 15px;
+}
+.contact-section-outer-box form div >textarea:hover{
+    background-color: white;
 
+}
+.contact-section-outer-box form div>input:hover{
+    background-color: white;
+}
 
 /* footer section appears here */
 footer{
@@ -180,13 +253,32 @@ footer span{
         padding:5px;
 
     }
-
+    .header-section-button{
+        margin-top: 10px;
+        text-align: center;
+    }
     .home-section{
         padding:0 10px;
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .about-section-profile>img{
+        margin-left:50px;
+    }
+    .about-section-text{
+        margin:20px 20px 0 0px;
+        padding:10px;
+
+        
+    }
+    .skill-section{
+        margin-left:30px;
     }
     .contact-section-outer-box{
         width:100%;
         padding:10px;
-        margin:0px 10px;
+        margin-left:20px;
+        margin-right:10px;
     }
 }
