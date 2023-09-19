@@ -1,45 +1,47 @@
 /* google fonts appear here */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
-body{
+/* body{
     background-color: var(--dark-primary-color);
-}
+} */
 /* root element */
 :root{
-    /* --dark-primary-color:#303234; */
     --dark-primary-color:#000;
     --light-secondary-color:#01C38D;
 }
 
 /* header section appears here */
 .header-section{
-    margin:10px 0 60px 0;
+    background-color: var(--dark-primary-color);
     display:flex;
     justify-content: space-around;
     padding:10px;
     align-items: center;
 }
 .header-section-logo{
-    background-color: var(--light-secondary-color);
     color:white;
-    padding: 10px;
+    /* padding: 10px; */
     font-weight: 900 bolder;
     text-align:center;
+    margin:20px 0 20px 0;
     /* margin-left:50px; */
 }
 .header-section-logo span{
-    color:var(--dark-primary-color);
+    color:var(--light-secondary-color);
 }
 
 .header-section-menu ul  {
+    margin:20px 0 20px 0;
     list-style: none;
     display:flex;
     justify-content: center;
@@ -47,8 +49,8 @@ body{
 }
 .header-section-menu ul li{
     background-color: var(--dark-primary-color);
-    border: 3px solid var(--light-secondary-color);
-    padding:20px;
+    /* border: 3px solid var(--light-secondary-color); */
+    padding:10px;
 
 }
 .header-section-menu ul li>a{
@@ -67,31 +69,44 @@ body{
     color:white;
 }
 .header-section-button>.button-primary{
-    padding: 20px;
+    margin:20px 0 20px 0;
+    padding: 10px;
     font-weight:700;
 }
 .header-section-button>.button-primary:hover{
     color:white;
 }
+
 /* home-section appears here */
 .home-section{
+    background-color: var(--dark-primary-color);
+    opacity:0.95;
     color:white;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height:500px;
     
-    height:300px;
+
 }
-img{
+/* img{
 
     border:3px solid var(--light-secondary-color);
     border-radius: 30px;
     margin-right: 50px;
 
-}
+} */
 .home-section-text h3,h2,p{
     margin-top:10px;
     text-align: center;
     
+}
+.home-section-text h2>span{
+    color:var(--light-secondary-color);
+}
+.home-section-text p>a{
+    text-decoration:none;
+    color:white;
 }
 
 .home-section-icons{
@@ -106,7 +121,9 @@ img{
     cursor: pointer;
 }
 
-.button{
+.home-section-buttons{
+    display: flex;
+    justify-content: center;
     margin:20px 0;
     font-weight: 500;
     text-align: center;
@@ -124,6 +141,10 @@ img{
     background-color: var(--light-secondary-color);
     color:var(--dark-primary-color);
 }
+.second-button a button i , .first-button a button i{
+    margin-right:10px;
+}
+
 
 .button-secondary:hover{
     cursor:pointer;
@@ -132,21 +153,25 @@ img{
 }
 /* about section appears here */
 .about-section{
-    /* display:flex;
-    justify-content: center; */
-    margin:20px 0px;
+    background-color: var(--dark-primary-color);
+    /* margin:20px 0px; */
     display: flex;
-    justify-content: center;
-
+    justify-content:center;
+    align-items: center;
+    height: 500px;
     
 }
 .about-section-profile{
+    margin:40px 0px;
     flex:0.3;
 }
 .about-section-text{
+    /* margin:40px 0px; */
     color:white;
-    padding:0px;
-    flex:0.7;
+    text-align:start;
+
+    /* padding:0px;
+    flex:0.7; */
 }
 .about-section-text hr{
     height:3px;
@@ -154,8 +179,12 @@ img{
     background-color: var(--light-secondary-color);
     border:none;
 }
+.about-section-content-list-items a{
+    text-decoration:none;
+    color:white;
+}
 .about-section-content ul li{
-    margin:10px 20px;
+    /* margin:10px 20px; */
     list-style: none;
 }
 
@@ -166,41 +195,48 @@ img{
 
 /* skill section appears here */
 .skill-section {
-    text-align:center
+    background-color: var(--dark-primary-color);
+    opacity:0.95;
+    height:400px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.skill-section h1{
+.skill-section-heading{
+    margin-bottom:20px;
+    text-align: center;
     color:white;
     font-weight:bolder;
-    margin-top:20px 0px;
 }
-.skill-section{
-    /* margin-right: 30px; */
+.skill-section-images{
+    display: flex;
 }
 .skill-section-images img{
     width:150px;
     height:150px;
-    margin: 30px 20px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    margin-right:50px;
+    margin-left:50px;
+    border:3px solid var(--light-secondary-color);
+    padding:10px;
+    
 }
 .skill-section-images img:hover{
     cursor:pointer;
 }
 /* contact section appears here */
-
+.contact-section{
+    background-color: var(--dark-primary-color);
+    padding-bottom: 30px;
+}
 .contact-section h1{
     color:white;
     font-weight: bolder;
-    padding: 30px;
+    padding: 20px;
     text-align:center;
 } 
-
-.contact-section-outer-box{
-    border:3px solid var(--light-secondary-color);
-    border-radius: 40px;
-    background-color: var(--dark-primary-color);
-    padding:30px;
-    width:50%;
-    margin:auto;
-}
 
 form div{
     display: flex;
@@ -208,33 +244,44 @@ form div{
     margin:8px;
 }
 form div input,textarea{
+    border:none;
+    outline:none;
     padding:10px;
     width:500px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: var(--light-secondary-color);
     font-weight: bolder;
 }
+.contact-section-form{
+    margin-bottom:30px;
+
+}
 .contact-section-button{
     text-align:center;
-    margin-top: 15px;
+
 }
-.contact-section-outer-box form div >textarea:hover{
+.contact-section-form form div >textarea:hover{
     background-color: white;
 
 }
-.contact-section-outer-box form div>input:hover{
+.contact-section-form form div>input:hover{
     background-color: white;
 }
 
 /* footer section appears here */
 footer{
-   
+    background-color: var(--dark-primary-color);
+    opacity:0.95;
+    height: 80px;
     color:white;
-    text-align:center;
-    margin:40px 0;
-
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-
+footer h4>a{
+    margin-top:20px;
+    text-decoration: none;
+}
 footer span{
     color:var(--light-secondary-color);
     font-weight: 700;
@@ -272,6 +319,10 @@ footer span{
         padding:10px;
 
         
+    }
+    .about-section-address a{
+        display: flex;
+        text-decoration: none;
     }
     .skill-section{
         margin-left:30px;
