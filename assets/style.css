@@ -1,5 +1,3 @@
-/* google fonts appear here */
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
@@ -11,13 +9,13 @@
 
 }
 
-/* body{
+body{
     background-color: var(--dark-primary-color);
-} */
+}
 /* root element */
 :root {
     --dark-primary-color: #000;
-    --light-secondary-color: #01C38D;
+    --light-secondary-color: #282890;
 }
 
 /* header section appears here */
@@ -75,17 +73,27 @@
 }
 
 
-.header-section-menu a:hover {
-    background-color: var(--light-secondary-color);
-    color: black;
-}
+.header-section-menu a {
+    position: relative;
+  }
+  
+  .header-section-menu a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #df1616;
+    transition: width 0.3s ease;
+  }
+  
+  .header-section-menu a:hover::before {
+    width: 100%;
+  }
+  
 
-/* .header-section-button>.button-primary {
-    margin: 20px 0 20px 0;
-    padding: 10px;
-    font-weight: 700;
-    color: black;
-} */
+
 
 .header-section-button-primary{
     background-color: var(--light-secondary-color);
